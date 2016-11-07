@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{397599EC-E599-4D5E-81D5-509C5057E286}</ProjectGuid>
+    <ProjectGuid>{10E29922-B32F-468C-AB7E-302502410126}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gui</RootNamespace>
-    <AssemblyName>Gui</AssemblyName>
+    <RootNamespace>Opgave2_1</RootNamespace>
+    <AssemblyName>Opgave2_1</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -107,13 +107,34 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="AddEditWine.aspx" />
+    <Content Include="App_Data\WalthersWines.mdf" />
+    <Content Include="App_Data\WalthersWines_log.ldf">
+      <DependentUpon>WalthersWines.mdf</DependentUpon>
+    </Content>
     <Content Include="Default.aspx" />
+    <Content Include="District.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\31538_bottle.jpg" />
+    <Content Include="Images\Gewurtztraminer2000.JPG" />
+    <Content Include="Images\KuentzBas.JPG" />
+    <Content Include="Images\NizasRose2006.jpg" />
+    <Content Include="Images\PinotBlanc2006.jpg" />
+    <Content Include="Images\Riesling1997.jpg" />
+    <Content Include="Images\SerameMinervois2005.jpg" />
+    <Content Include="Images\sitemap.PNG" />
+    <Content Include="Images\tabeller.PNG" />
+    <Content Include="MyPage.aspx" />
+    <Content Include="Opgaven.aspx" />
     <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="AddEditWine.aspx.cs">
       <DependentUpon>AddEditWine.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,23 +146,29 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="District.aspx.cs">
+      <DependentUpon>District.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\WineDataRetriver.cs" />
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyPage.aspx.cs">
+      <DependentUpon>MyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Opgaven.aspx.cs">
+      <DependentUpon>Opgaven.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{3f2fd220-4607-46b8-acc8-99be13a055c6}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -156,9 +183,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>3668</DevelopmentServerPort>
+          <DevelopmentServerPort>3695</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3668/</IISUrl>
+          <IISUrl>http://localhost:3695/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

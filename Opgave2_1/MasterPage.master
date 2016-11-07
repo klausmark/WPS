@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master page title</title>
+    <link href="Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <main id="container">
+        <header class="grayBackground">Valdemars Vin</header>
+        <nav>
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Wines.aspx">Wines</a></li>
+                <li><a href="District.aspx">District</a></li>
+                <li><a href="MyPage.aspx">My Page</a></li>
+                <li><a href="AboutUs.aspx">About Us</a>
+                    <ul>
+                        <li><a href="Opgaven.aspx">Opgaven</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section id="main-content">
+            <asp:ContentPlaceHolder id="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+        <footer class="grayBackground">
+            Copyright © 2016 Valdemars Vin
+        </footer>
+    </main>
+    </form>
+</body>
+</html>
