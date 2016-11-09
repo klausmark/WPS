@@ -94,6 +94,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Opgavesaet3\Default.aspx" />
+    <Content Include="Opgavesaet3\Images\opgave31.PNG" />
+    <Content Include="Opgavesaet3\Opgave3_1.aspx" />
+    <Content Include="Opgavesaet3\Opgave3_2.aspx" />
+    <Content Include="Opgavesaet3\Opgave3_3.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -107,18 +112,47 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddEditWine.aspx" />
+    <Content Include="PlayingAround\AddEditWine.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="PlayingAround\Default.aspx" />
     <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEditWine.aspx.cs">
+    <Compile Include="Opgavesaet3\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Opgavesaet3\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Opgavesaet3\Opgave3_1.aspx.cs">
+      <DependentUpon>Opgave3_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Opgavesaet3\Opgave3_1.aspx.designer.cs">
+      <DependentUpon>Opgave3_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Opgavesaet3\Opgave3_2.aspx.cs">
+      <DependentUpon>Opgave3_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Opgavesaet3\Opgave3_2.aspx.designer.cs">
+      <DependentUpon>Opgave3_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Opgavesaet3\Opgave3_3.aspx.cs">
+      <DependentUpon>Opgave3_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Opgavesaet3\Opgave3_3.aspx.designer.cs">
+      <DependentUpon>Opgave3_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayingAround\AddEditWine.aspx.cs">
       <DependentUpon>AddEditWine.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddEditWine.aspx.designer.cs">
+    <Compile Include="PlayingAround\AddEditWine.aspx.designer.cs">
       <DependentUpon>AddEditWine.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -132,6 +166,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\WineDataRetriver.cs" />
+    <Compile Include="PlayingAround\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayingAround\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

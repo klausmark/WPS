@@ -13,8 +13,20 @@
         <header class="grayBackground">Valdemars Vin</header>
         <nav>
             <ul>
-                <li><a href="Default.aspx">Home</a></li>
-                <li><a href="AddEditWines.aspx">Add new Wine</a></li>
+                <li><a href="/Default.aspx">Home</a></li>
+                <li><a href="/Opgavesaet3/Default.aspx">Opgavesæt 3</a>
+                    <ul>
+                        <li><a href="/Opgavesaet3/Opgave3_1.aspx">Opgave 3.1</a></li>
+                        <li><a href="/Opgavesaet3/Opgave3_2.aspx">Opgave 3.2</a></li>
+                        <li><a href="/Opgavesaet3/Opgave3_3.aspx">Opgave 3.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="/PlayingAround/Default.aspx">Playing around</a>
+                    <ul>
+                        <li><a href="/PlayingAround/Default.aspx">Display wines</a></li>
+                        <li><a href="/PlayingAround/AddEditWine.aspx">Add new Wine</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <section id="main-content">
